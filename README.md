@@ -1,2 +1,2 @@
 # Python_projects
-Some good projects in python
+This repositary contains some projects related to web_scrapping ,AI and beginner-level projects
