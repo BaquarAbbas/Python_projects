@@ -56,26 +56,26 @@ while True:
         speak(results)
         #print(results)
 
-    elif "open Youtube" in query:
+    elif "open youtube" in query:
         webbrowser.open("youtube.com")
 
-    elif "open Google" in query:
+    elif "open google" in query:
         webbrowser.open("google.com")
 
-    elif "play Music" in query:
+    elif "play music" in query:
         music_dir = "C:\\Users\\munna\\Music"
         songs = os.listdir(music_dir)
         print(songs)
-        os.startfile(os.path.join(music_dir, songs[0])
+        os.startfile(os.path.join(music_dir, songs[0]))
 
-    elif "open Code editor" in query:
+    elif "open code editor" in query:
         code_path = "C:\\Users\\munna\\FLASK_projects\\Sublime Text 3\\sublime_text.exe"
         os.startfile(code_path)
         
-    elif "the Time" in query:
+    elif "the time" in query:
         strTime = datetime.datetime.now().strftime("%H:%M:%S")
         speak(f"The time is {strTime}")
         
-    elif "open Prime Video" in query:
+    elif "open prime video" in query:
         webbrowser.open("primevideo.com")
     
