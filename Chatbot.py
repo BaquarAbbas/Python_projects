@@ -85,10 +85,10 @@ if identity == 'Mark':
         "You have always loved baseball."
     ]
     # train chatbot with your custom data
-    custom_train(home_bot, city_born)
-    custom_train(home_bot, fav_book)
-    custom_train(home_bot, fav_movie)
-    custom_train(home_bot, fav_sports)
+    custom_train(bot, city_born)
+    custom_train(bot, fav_book)
+    custom_train(bot, fav_movie)
+    custom_train(bot, fav_sports)
 
 
 # start chatbot
