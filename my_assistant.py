@@ -161,23 +161,7 @@ while True:
         speak("you askmed me to locate at") 
         speak(location) 
         webbrowser.open("https://www.google.nl/maps/place/" + location + " ") 
-           
-    elif "news" in query:
-        try:
-            jsonObj = urlopen("https://newsapi.org/v1/articles?source = the-times-of-india&sortBy = top&apiKey =05bd83c4995d427ea84f5d08291e5117")
-            data = json.load(jsonObj)
-            i = 1 
-            speak("Here are the top news from times of India") 
-            for item in data['articles']:
-                print(str(i) + '. ' + item['title'] + '\n')
-                print(item['description'] + '\n') 
-                speak(str(i) + '. ' + item['title'] + '\n')
-                i += 1 
-                
-        except Exception as e:
-            print(str(e))
-                
-        
+             
     elif "bye" or "exit" in query:
         speak("Thanks for having your valuable time with me") 
         speak("I will meet you tomorrow") 
