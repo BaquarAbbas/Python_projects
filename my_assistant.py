@@ -158,7 +158,7 @@ while True:
     elif "where is" in query:
         query = query.replace("where is", "") 
         location = query 
-        speak("you askmed me to locate at") 
+        speak("you asked me to locate at") 
         speak(location) 
         webbrowser.open("https://www.google.nl/maps/place/" + location + " ") 
              
